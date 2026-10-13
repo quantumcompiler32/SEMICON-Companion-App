@@ -24,6 +24,8 @@ import {
 import { NavigatorDB } from "../src/services/database";
 import type { Connection } from "../src/domain/models";
 describe("authoritative schedule", () => {
+  it("defaults new devices to the confirmed Group B assignment", () =>
+    expect(initialData().settings.group).toBe("B"));
   it.each([
     ["A", "Awareness to Action", "BINGO", "Scavenger Hunt"],
     ["B", "Scavenger Hunt", "AT3", "BINGO"],

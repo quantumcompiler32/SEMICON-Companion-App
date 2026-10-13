@@ -389,7 +389,7 @@ export function initialData(): PersonalData {
   return {
     version: 1,
     settings: {
-      group: null,
+      group: "B",
       theme: "dark",
       hall: "Not selected",
       introduction,

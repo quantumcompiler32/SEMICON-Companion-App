@@ -1,3 +1,4 @@
+import { newId } from "../utils/id";
 import { LocationDetails } from "../components/LocationDetails";
 import { venueLocations } from "../data/locations";
 import { useEffect, useRef, useState } from "react";
@@ -126,7 +127,7 @@ export function VenueMap() {
       return;
     }
     const m: MapAsset = {
-      id: crypto.randomUUID(),
+      id: newId(),
       name: file.name,
       mime: file.type,
       data: file,

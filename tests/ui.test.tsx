@@ -12,8 +12,10 @@ vi.mock("virtual:pwa-register/react", () => ({
 afterEach(cleanup);
 describe("application UI", () => {
   it("shows an unknown group and changes breakouts without showing another group", async () => {
+    const unknown = initialData();
+    unknown.settings.group = null;
     useNavigator.setState({
-      data: initialData(),
+      data: unknown,
       ready: true,
       hydrate: vi.fn(async () => {}),
     });

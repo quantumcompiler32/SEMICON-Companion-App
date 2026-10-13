@@ -1,6 +1,6 @@
 # SEMICON Navigator
 
-Moksh's mobile-first, offline-first personal companion for **Tuesday, October 13, 2026**, at Moscone Center. The live dashboard shows the current MUSD activity, next stop, countdowns, and a location action. Required school activities always remain authoritative.
+Moksh's mobile-first, offline-first personal companion for **Tuesday, October 13, 2026**, at Moscone Center. The live dashboard shows the current MUSD activity, next stop, countdowns, and a location action. Required school activities always remain authoritative. Group B is the default, confirmed by Moksh on October 13, 2026; existing saved group choices are preserved.
 
 ## Run locally
 

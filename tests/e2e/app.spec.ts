@@ -8,7 +8,6 @@ test("mobile itinerary, quick capture, reload, offline PWA startup", async ({
   await expect(
     page.getByRole("heading", { name: /Your day, in focus/ }),
   ).toBeVisible();
-  await page.getByRole("button", { name: "Group B", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Independent Tour Time" }),
   ).toBeVisible();

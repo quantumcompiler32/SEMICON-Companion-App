@@ -1,3 +1,4 @@
+import { newId } from "../utils/id";
 import { useEffect, useState } from "react";
 import {
   Check,
@@ -129,7 +130,7 @@ function NoteEditor({ association = "" }: { association?: string }) {
           notes: [
             ...d.notes,
             {
-              id: crypto.randomUUID(),
+              id: newId(),
               text: text.trim(),
               association: related.trim(),
               kind,
@@ -247,7 +248,7 @@ function ContactEditor({
   const existing = data.contacts.find((c) => c.id === id);
   const [form, setForm] = useState<Connection>(
     existing ?? {
-      id: crypto.randomUUID(),
+      id: newId(),
       name: "",
       company,
       role: "",
@@ -576,7 +577,7 @@ function ActivityEditor({ id }: { id?: string }) {
   const existing = data.customActivities.find((a) => a.id === id);
   const [form, setForm] = useState<Activity>(
     existing ?? {
-      id: crypto.randomUUID(),
+      id: newId(),
       title: "",
       start: "13:30",
       end: "13:45",
